@@ -29,7 +29,11 @@ class ProfileView: UIView {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         self.setup()
+        self.nameLabel.text = "Имя"
+        self.birthdayLabel.text = "Дата рождения"
+        self.cityLabel.text = "Город"
     }
+    
     private func setup(){
         let view = self.loadViewFromXib()
         self.addSubview(view)
